@@ -1,5 +1,28 @@
 # ThadItrellisFrontendTripCalculator
 
+## Project breakdown
+
+* Hosted on  aws s3 @ http://itrellisthadfrontend.s3-website-us-east-1.amazonaws.com/
+
+* Contract is: 
+
+```
+{
+	"expenseTripRecord": [{
+			"fullName": some_string,
+			"expenses": [expense1, expense2]
+		}]
+}
+```
+
+* It uses Material2 for main styling and reactive forms for the form management.
+
+* Material2 is abstracted into a shared library, so it can port to other angular apps.
+
+* Comments should paint the way of the code.
+
+* The calculator is unit tested to show that I can and do run unit tests. Given more time, or even onsight, I can write them more or even live.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
 ## Development server

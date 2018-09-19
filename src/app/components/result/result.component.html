@@ -1,0 +1,5 @@
+<div *ngIf="peopleWhoOwes.length > 0">
+  <div *ngFor="let personWhoOwes of peopleWhoOwes">
+    {{ personWhoOwes.fullName + ' owes ' + personWhoOwes.owes + ' to ' +  personWhoReceivesOwe.fullName}}
+    </div>
+</div>

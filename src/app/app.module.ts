@@ -3,18 +3,29 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MaterialModuleModule } from './material-module/material-module.module';
+import { MaterialModuleModule } from './modules/material-module/material-module.module';
+
+import {FormlyModule} from '@ngx-formly/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpUtilService } from './services/http-util.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ResultComponent } from './components/result/result.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModuleModule
+    MaterialModuleModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(),
+    // import HttpClientModule after BrowserModule.
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpUtilService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
