@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MaterialModuleModule } from './modules/material-module/material-module.module';
 
-import {FormlyModule} from '@ngx-formly/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpUtilService } from './services/http-util.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,7 +20,6 @@ import { ResultComponent } from './components/result/result.component';
     BrowserAnimationsModule,
     MaterialModuleModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
     // import HttpClientModule after BrowserModule.
     HttpClientModule
   ],
