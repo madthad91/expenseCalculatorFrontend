@@ -2,6 +2,9 @@
 
 ## Project breakdown
 
+
+* local setup: npm install && npm start
+
 * Hosted on  aws s3 @ http://itrellisthadfrontend.s3-website-us-east-1.amazonaws.com/
 
 * Contract is: 
