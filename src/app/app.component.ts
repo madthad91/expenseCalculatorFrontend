@@ -7,7 +7,7 @@ import { HttpUtilService } from './services/http-util.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'thad-itrellis-frontend-trip-calculator';
